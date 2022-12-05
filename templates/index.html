@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -5,7 +7,7 @@
         <meta charset="utf-8">
         <title>Zion Forex</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-        <link rel="stylesheet" href="../public/stylesheets/master.css">
+        <link rel="stylesheet" href="{% static 'stylesheets/master.css' %}">
     </head>
     <body>
         <header>
@@ -36,10 +38,10 @@
             <div class="lead">
                 <div class="lead-container w50">
                     <h3>We are an RBI authorised foreign exchange dealer.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet.</p>
+                    <p>M/s  ZION MONEY CHANGERS PVT LTD. is a Full Fledged Money Changer(FFMC) business authorised by the Reserve Bank of India(RBI) to buy & sell foreign currencies. The company was incorporated in the year 2006 by Mr. A H Dinesh along with Mr. V Ravi and has been in and around the business for over 16 years.<br><br>Our best rates have influenced us significantly throughout Bangalore over several years towards Foreign Exchange diligence – a lieu clearly reflected in our reputation for market expertness and customer service.</p>
                 </div>
                 <div class="w50">
-                    <img src="../public/assets/img1.jpg" alt="currency-notes" class="img">
+                    <img src="{% static 'assets/img1.jpg' %}" alt="currency-notes" class="img">
                 </div>
             </div>
         </section>
@@ -50,22 +52,22 @@
             </div>
             <div class="lead">
                 <div class="services-container">
-                    <img src="../public/assets/icon1.png" alt="currency-exchange">
+                    <img src="{% static 'assets/icon1.png' %}" alt="currency-exchange">
                     <h2>Exchange</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                 </div>
                 <div class="services-container">
-                    <img src="../public/assets/icon2.png" alt="currency-exchange">
+                    <img src="{% static 'assets/icon2.png' %}" alt="currency-exchange">
                     <h2>Transfer</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                 </div>
                 <div class="services-container">
-                    <img src="../public/assets/icon3.png" alt="currency-exchange">
+                    <img src="{% static 'assets/icon3.png' %}" alt="currency-exchange">
                     <h2>Tickets</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                 </div>
                 <div class="services-container">
-                    <img src="../public/assets/icon4.png" alt="currency-exchange">
+                    <img src="{% static 'assets/icon4.png' %}" alt="currency-exchange">
                     <h2>Passport Assistance</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                 </div>
@@ -104,33 +106,34 @@
                             <div class="column currency">Currency</div>
                             <div class="column rate">Rate</div>
                         </li>
-                        <li class="item-container">
-                            <div class="column currency">US Dollar</div>
-                            <div class="column rate">₹ 74.48</div>
-                        </li>
-                        <li class="item-container">
-                            <div class="column currency">US Dollar</div>
-                            <div class="column rate">₹ 74.48</div>
-                        </li>
-                        <li class="item-container">
-                            <div class="column currency">US Dollar</div>
-                            <div class="column rate">₹ 74.48</div>
-                        </li>
-                        <li class="item-container">
-                            <div class="column currency">US Dollar</div>
-                            <div class="column rate">₹ 74.48</div>
-                        </li>
-                        <li class="item-container">
-                            <div class="column currency">US Dollar</div>
-                            <div class="column rate">₹ 74.48</div>
-                        </li>
-                        <li class="item-container">
-                            <div class="column currency">US Dollar</div>
-                            <div class="column rate">₹ 74.48</div>
-                        </li>
-                    </div>
 
-                    <img src="../public/assets/img1.jpg" alt="currency-notes" class="img">
+                        {% for currency in currencyData %}
+                            <li class="item-container">
+                                <div class="column currency">{{ currency.currency_name }}</div>
+                                <div class="column rate">₹ {{ currency.buy_price }}</div>
+                            </li>
+                        {% endfor %}
+                        <!-- <li class="item-container">
+                            <div class="column currency">US Dollar</div>
+                            <div class="column rate">₹ 74.48</div>
+                        </li>
+                        <li class="item-container">
+                            <div class="column currency">US Dollar</div>
+                            <div class="column rate">₹ 74.48</div>
+                        </li>
+                        <li class="item-container">
+                            <div class="column currency">US Dollar</div>
+                            <div class="column rate">₹ 74.48</div>
+                        </li>
+                        <li class="item-container">
+                            <div class="column currency">US Dollar</div>
+                            <div class="column rate">₹ 74.48</div>
+                        </li>
+                        <li class="item-container">
+                            <div class="column currency">US Dollar</div>
+                            <div class="column rate">₹ 74.48</div>
+                        </li> -->
+                    </div>
 
                 </div>
             </div>
