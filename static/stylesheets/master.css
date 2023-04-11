@@ -20,7 +20,7 @@ section {
 .header {
     position: relative;
     min-height: 100vh;
-    background: url(../assets/banner.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/banner.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -240,6 +240,10 @@ img {
 .pricing {
     background: #393e46;
     color: #f2f6f5;
+}
+
+.pricing .lead a {
+    color: white
 }
 
 
