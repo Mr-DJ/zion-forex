@@ -1,80 +1,133 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en"
+      dir="ltr">
+
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Zion Forex</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'stylesheets/master.css' %}">
+        <link rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+              integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="{% static 'stylesheets/master.css' %}">
     </head>
+
     <body>
         <header>
-            <a href="#home" class="logo">ZIONFOREX</a>
-            <div class="toggle" onclick="toggleNav();">
+            <a href="#home"
+               class="logo">ZIONFOREX</a>
+            <div class="toggle"
+                 onclick="toggleNav();">
             </div>
             <ul class="nav">
-                <li><a href="#home" onclick="toggleNav();">Home</a></li>
-                <li><a href="#about" onclick="toggleNav();">About</a></li>
-                <li><a href="#services" onclick="toggleNav();">Services</a></li>
-                <li><a href="#reviews" onclick="toggleNav();">Reviews</a></li>
-                <li><a href="#pricing" onclick="toggleNav();">Pricing</a></li>
-                <li><a href="#contact" onclick="toggleNav();">Contact</a></li>
+                <li><a href="#home"
+                       onclick="toggleNav();">Home</a></li>
+                <li><a href="#about"
+                       onclick="toggleNav();">About</a></li>
+                <li><a href="#services"
+                       onclick="toggleNav();">Services</a></li>
+                <li><a href="#reviews"
+                       onclick="toggleNav();">Reviews</a></li>
+                <li><a href="#pricing"
+                       onclick="toggleNav();">Pricing</a></li>
+                <li><a href="#contact"
+                       onclick="toggleNav();">Contact</a></li>
             </ul>
         </header>
-
-        <section class="header" id="home">
+        <section class="header"
+                 id="home">
             <div class="text-container">
                 <h2>Welcome to <br><span>Zion Forex.</span></h2>
                 <h3>We are an RBI authorised foreign exchange dealer.</h3>
-                <a href="#about" class="btn">About Us</a>
+                <a href="#about"
+                   class="btn">About Us</a>
             </div>
         </section>
-        <section class="about" id="about">
+        <section class="about"
+                 id="about">
             <div class="title">
                 <h2>About Us</h2>
             </div>
             <div class="lead">
                 <div class="lead-container w50">
-                    <h3>We are an RBI authorised foreign exchange dealer.</h3>
-                    <p>M/s  ZION MONEY CHANGERS PVT LTD. is a Full Fledged Money Changer(FFMC) business authorised by the Reserve Bank of India(RBI) to buy & sell foreign currencies. The company was incorporated in the year 2006 by Mr. A H Dinesh along with Mr. V Ravi and has been in and around the business for over 16 years.<br><br>Our best rates have influenced us significantly throughout Bangalore over several years towards Foreign Exchange diligence – a lieu clearly reflected in our reputation for market expertness and customer service.</p>
+                    <h3>Welcome to our website!</h3>
+                    <p>We are a trusted foreign exchange company authorized by the <b>Reserve Bank of India</b> (RBI) to
+                        buy and sell foreign currencies. With over 16 years of experience in the business, we have built
+                        a reputation for providing <strong>reliable, efficient, and effortless</strong> foreign exchange
+                        services to individuals and businesses across Bangalore.</p>
+                    <p><br />Our company was incorporated in 2006 by <strong>Mr. A H Dinesh</strong> and <strong>Mr. V
+                            Ravi</strong>, both of whom have extensive experience in the foreign exchange industry.
+                        Since then, we have grown to become one of the most reputed foreign exchange providers in
+                        Bangalore, with a network of 3 branches across the city.</p>
+                    <p><br />At our core, we believe that every customer deserves the best possible foreign exchange
+                        experience. That's why we offer a range of services designed to meet the diverse needs of our
+                        clients. Whether you need to buy or sell foreign currencies for personal or business purposes,
+                        our team of experts is here to help you every step of the way.</p>
+                    <p><br />We pride ourselves on our commitment to <strong>transparency, integrity, and customer
+                            service</strong>. When you choose us as your foreign exchange provider, you can rest assured
+                        that you are getting the best possible rates, with no hidden fees or charges. Our team is always
+                        on hand to answer any questions you may have, and we strive to make every transaction as
+                        <strong>smooth and hassle-free</strong> as possible.</p>
+                    <p><br />Thank you for considering us as your foreign exchange provider. We look forward to serving
+                        you soon!</p>
                 </div>
                 <div class="w50">
-                    <img src="{% static 'assets/img1.jpg' %}" alt="currency-notes" class="img">
+                    <img src="{% static 'assets/img1.jpg' %}"
+                         alt="currency-notes"
+                         class="img">
                 </div>
             </div>
         </section>
-        <section class="services" id="services">
+        <section class="services"
+                 id="services">
             <div class="title light">
                 <h2>Our Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>We offer a range of services designed to meet the diverse needs of our clients.</p>
             </div>
             <div class="lead">
                 <div class="services-container">
-                    <img src="{% static 'assets/icon1.png' %}" alt="currency-exchange">
+                    <img src="{% static 'assets/icon1.png' %}"
+                         alt="currency-exchange">
                     <h2>Exchange</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    <p>We offer a range of foreign exchange services, including buying and selling of foreign currencies
+                        for personal and business purposes. Our experienced team can help you get the best possible
+                        rates. We strive to make every transaction as smooth and hassle-free as possible.</p>
                 </div>
                 <div class="services-container">
-                    <img src="{% static 'assets/icon2.png' %}" alt="currency-exchange">
+                    <img src="{% static 'assets/icon2.png' %}"
+                         alt="currency-exchange">
                     <h2>Transfer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    <p>We offer a convenient and secure money transfer service in partnership with Western Union. You
+                        can send and receive money to and from anywhere in the world quickly and easily. Our team will
+                        guide you through the process and ensure that your transaction is completed smoothly and
+                        securely.</p>
                 </div>
                 <div class="services-container">
-                    <img src="{% static 'assets/icon3.png' %}" alt="currency-exchange">
+                    <img src="{% static 'assets/icon3.png' %}"
+                         alt="currency-exchange">
                     <h2>Tickets</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    <p>We offer a hassle-free flight booking service for both domestic and international travel. Our
+                        team can help you find the best flight options that fit your budget and preferences. We work to
+                        provide you with competitive rates and a seamless booking experience. You can count on us to
+                        help you plan your next trip with ease. </p>
                 </div>
                 <div class="services-container">
-                    <img src="{% static 'assets/icon4.png' %}" alt="currency-exchange">
+                    <img src="{% static 'assets/icon4.png' %}"
+                         alt="currency-exchange">
                     <h2>Passport Assistance</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    <p>We offer a comprehensive passport assistance service to help you with all your passport needs.
+                        Our team can help you with passport application, renewal, and other related services. You can
+                        trust us to help you obtain your passport quickly and efficiently.</p>
                 </div>
             </div>
         </section>
-   <!-- FOR WORK SECTION refer 20:26 -->
-        <section class="reviews" id="reviews">
+        <!-- FOR WORK SECTION refer 20:26 -->
+        <section class="reviews"
+                 id="reviews">
             <div class="title">
                 <h2>Reviews</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -90,30 +143,30 @@
                 </div>
             </div>
         </section>
-        <section class="pricing" id="pricing">
+        <section class="pricing"
+                 id="pricing">
             <div class="title light">
                 <h2>Pricing</h2>
             </div>
             <div class="lead">
                 <div class="lead-container w50">
-                    <h3>We are an RBI authorised foreign exchange dealer.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet.</p>
+                    <h3>Get competitive rates for all your foreign exchange needs with us.</h3>
+                    <p>As a foreign exchange company, we offer competitive rates for all our services. Our pricing
+                        policies are transparent and straightforward, with no hidden fees or charges. We believe in
+                        providing our customers with the best possible rates for their foreign exchange transactions,
+                        whether it's for buying or selling currencies, or for sending or receiving money through our
+                        money transfer services. Our experienced team can help you navigate the often complex world of
+                        foreign exchange and ensure that you get the most value for your money.</p>
                 </div>
                 <div class="w50">
-
                     <div class="currency-table">
                         <li class="item-header">
                             <div class="column currency">Currency</div>
                             <div class="column rate">Rate</div>
-                        </li>
-
-                        {% for currency in currencyData %}
-                            <li class="item-container">
-                                <div class="column currency">{{ currency.currency_name }}</div>
-                                <div class="column rate">₹ {{ currency.buy_price }}</div>
-                            </li>
-                        {% endfor %}
-                        <!-- <li class="item-container">
+                        </li> {% for currency in currencyData %} <li class="item-container">
+                            <div class="column currency">{{ currency.currency_name }}</div>
+                            <div class="column rate">₹ {{ currency.buy_price }}</div>
+                        </li> {% endfor %} <!-- <li class="item-container">
                             <div class="column currency">US Dollar</div>
                             <div class="column rate">₹ 74.48</div>
                         </li>
@@ -134,14 +187,15 @@
                             <div class="column rate">₹ 74.48</div>
                         </li> -->
                     </div>
-
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact"
+                 id="contact">
             <div class="title">
                 <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Get in touch with us for all your foreign exchange, money transfer, and passport assistance needs.
+                    Our team is always here to help.</p>
             </div>
             <div class="lead">
                 <div class="contact-info">
@@ -162,7 +216,10 @@
                             </div>
                             <div class="text">
                                 <h3>Phone</h3>
-                                <p>080 2559 2079<br>+91 98450 93760</p>
+                                <a href="callto:08025592079"
+                                   class="disablephone">080 2559 2079</a>
+                                <a href="callto:+919845093760"
+                                   class="disablephone">+91 98450 93760</a>
                             </div>
                         </div>
                         <div class="container">
@@ -171,28 +228,37 @@
                             </div>
                             <div class="text">
                                 <h3>Email</h3>
-                                <p>info@zionforex.com</p>
+                                <a href="mailto:info@zionforex.com">info@zionforex.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-container">
-                    <form action="index.html" method="post">
+                    <form action="index.html"
+                          method="post">
                         <h3>Message Us</h3>
-                        <input type="text" name="" value="" placeholder="Alex Flipnote">
-                        <input type="email" name="" value="" placeholder="alex@xyz.com">
-                        <textarea name="" placeholder="Your Message ..."></textarea>
-                        <input type="submit" name="" value="Send">
+                        <input type="text"
+                               name=""
+                               value=""
+                               placeholder="Alex Flipnote">
+                        <input type="email"
+                               name=""
+                               value=""
+                               placeholder="alex@xyz.com">
+                        <textarea name=""
+                                  placeholder="Your Message ..."></textarea>
+                        <input type="submit"
+                               name=""
+                               value="Send">
                     </form>
                 </div>
             </div>
         </section>
-
         <div class="copyright">
             <p>Copyright © 2020 Zion Forex. All Rights Reserved.</p>
         </div>
         <script type="text/javascript">
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 let header = document.querySelector('header');
                 header.classList.toggle('sticky', window.scrollY > 0);
             });
@@ -205,4 +271,5 @@
             }
         </script>
     </body>
+
 </html>

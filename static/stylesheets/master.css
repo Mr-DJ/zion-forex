@@ -328,6 +328,22 @@ img {
     position: relative;
 }
 
+.contact-container a {
+    color: #63707e;
+}
+
+.disablephone {
+    pointer-events: none;
+    cursor: default;
+}
+
+@media only screen and (max-device-width: 480px) {
+    a[class="disablephone"] {
+        pointer-events: auto !important;
+        cursor: auto !important;
+    }
+}
+
 .contact-container .container {
     position: relative;
     padding: 20px 0;
