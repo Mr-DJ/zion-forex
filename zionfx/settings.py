@@ -84,12 +84,12 @@ WSGI_APPLICATION = 'zionfx.wsgi.application'
 DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': config('PG_PASSWORD'),
-        'HOST': config('PG_HOST'),
-        'PORT': config('PG_PORT'),
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'railway',
+        # 'USER': 'postgres',
+        # 'PASSWORD': config('PG_PASSWORD'),
+        # 'HOST': config('PG_HOST'),
+        # 'PORT': config('PG_PORT'),
     }    
 }
 

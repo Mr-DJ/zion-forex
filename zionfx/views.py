@@ -7,6 +7,7 @@ def home(request):
     #fix
     base_url = request.build_absolute_uri('/') 
     api_url = base_url + 'currency/list/'
-    currencyData = requests.get(api_url).json()
+    # currencyData = requests.get(api_url).json()
     # print(request.build_absolute_uri)
-    return render(request, 'index.html', { 'currencyData': currencyData })
+    # return render(request, 'index.html', { 'currencyData': currencyData })
+    return render(request, 'index.html')
