@@ -13,6 +13,8 @@
               integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
               crossorigin="anonymous">
         <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
               href="{% static 'stylesheets/master.css' %}">
     </head>
 
@@ -261,6 +263,12 @@
                 </div>
             </div>
         </section>
+        <a href=""
+           class="float-icon"
+           onclick="redirectToWA()"
+           target="_blank">
+            <i class="fa fa-whatsapp wa-float"></i>
+        </a>
         <div class="copyright">
             <p>Copyright © 2020 Zion Forex. All Rights Reserved.</p>
         </div>
@@ -275,6 +283,10 @@
                 let nav = document.querySelector('.nav');
                 navToggle.classList.toggle('active');
                 nav.classList.toggle('active');
+            }
+
+            function redirectToWA() {
+                window.open('https://api.whatsapp.com/send/?phone=919845093760&text=Hi%2C+I%27m+interested+in+a+quotation+for+...&type=phone_number&app_absent=0', '_blank');
             }
         </script>
     </body>

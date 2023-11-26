@@ -515,3 +515,21 @@ img {
         padding: 100px 20px;
     }
 }
+
+.float-icon {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.wa-float {
+    margin-top: 16px;
+}
