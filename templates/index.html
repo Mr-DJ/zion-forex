@@ -32,8 +32,8 @@
                        onclick="toggleNav();">Services</a></li>
                 <li><a href="#reviews"
                        onclick="toggleNav();">Reviews</a></li>
-                <li><a href="#pricing"
-                       onclick="toggleNav();">Pricing</a></li>
+                <!-- <li><a href="#pricing"
+                       onclick="toggleNav();">Pricing</a></li> -->
                 <li><a href="#contact"
                        onclick="toggleNav();">Contact</a></li>
             </ul>
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing"
+        <!-- <section class="pricing"
                  id="pricing">
             <div class="title light">
                 <h2>Pricing</h2>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="contact"
                  id="contact">
             <div class="title">
@@ -246,14 +246,14 @@
                         <input type="text"
                                name=""
                                value=""
-                               placeholder="Alex Flipnote">
+                               placeholder="Alex Flipnote" required minlength="5">
                         <input type="email"
                                name=""
                                value=""
-                               placeholder="alex@xyz.com">
+                               placeholder="alex@xyz.com" required>
                         <textarea name=""
-                                  placeholder="Your Message ..."></textarea>
-                        <input disabled
+                                  placeholder="Your Message ..." required minlength="5" maxlength="200"></textarea>
+                        <input
                                type="submit"
                                name=""
                                value="Send">

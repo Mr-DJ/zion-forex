@@ -18,7 +18,7 @@ from django.urls import path, include
 from . import views;
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('zionforexadmin/', admin.site.urls),
     path('', views.home),
-    path('currency/',include('zion.urls'))
+    # path('currency/',include('zion.urls'))
 ]
