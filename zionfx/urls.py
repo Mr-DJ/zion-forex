@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponseRedirect
 from . import views;
+
+def redirect_to_google_reviews(request):
+    return HttpResponseRedirect('https://search.google.com/local/writereview?placeid=ChIJd074aWIWrjsRerfqQDckGDI')
 
 urlpatterns = [
     path('zionforexadmin/', admin.site.urls),
+    path('review/', redirect_to_google_reviews, name='redirect_to_google_reviews'),
     path('', views.home),
     # path('currency/',include('zion.urls'))
 ]
